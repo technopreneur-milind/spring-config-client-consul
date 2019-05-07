@@ -15,11 +15,12 @@ public class SpringConfigClientApplication {
 	}
 }
 
-@RefreshScope
+//@RefreshScope
 @RestController
 class MessageRestController {
 
-	@Value("${msg:Hello world - Config Server is not working..pelase check}")
+	@Value("${msg:Hello world - KV Store is not working..pelase check}")
+	//@Value("${new.newmsg:Hello world - KV Store is not working..pelase check}")
 	private String msg;
 
 	@RequestMapping("/msg")
